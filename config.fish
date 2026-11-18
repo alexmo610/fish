@@ -20,7 +20,16 @@ alias u="sudo pacman -Syu"
 alias i="sudo pacman -S "
 alias q="sudo pacman -Qe"
 alias v="nvim"
-alias r="ranger"
+#alias r="ranger"
 alias p="pyradio"
 alias y="yazi"
 alias d="ytdlp-gui"
+
+zoxide init fish | source
+
+# Hermes Agent command
+fish_add_path "$HOME/.local/bin"
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/alexpad/.local/bin" $PATH
